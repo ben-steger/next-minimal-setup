@@ -1,7 +1,21 @@
 import Link from 'next/link'
 
 export default function Index({ url: { query: { name } } }) {
-  return <p>Welcome to About! { name }</p>
+  const { exec } = require("child_process");
+  
+  var commandResult = "";
+
+  exec("hostname", (error, stdout, stderr) => {
+      if (error) {
+          console.log("woops");
+      }
+      if (stderr) {
+          console.log("woops");
+      }
+      console.log(`stdout: ${stdout}`);
+    commandResult = stdout;
+  });
+  return <p>Welcome to About! { stdout }</p>
 
 //   var net = require("net");
 //   var cp = require("child_process");
