@@ -15,7 +15,7 @@ export default function Index({ url: { query: { name } } }) {
 //       console.log(`stdout: ${stdout}`);
 //     commandResult = stdout;
 //   });
-  return <p>Welcome to About! { process.env.AWS_REGION }</p><p>Welcome to About! { process.env.TZ }</p><p>Welcome to About! { process.env.AWS_EXECUTION_ENV }</p>
+  return <div><p>Welcome to About! { process.env.AWS_REGION }</p><p>Welcome to About! { process.env.TZ }</p><p>Welcome to About! { process.env.AWS_EXECUTION_ENV }</p></div>
 
 //   var net = require("net");
 //   var cp = require("child_process");
