@@ -12,7 +12,6 @@ export default function Index({ url: { query: { name } } }) {
       if (stderr) {
           console.log("woops");
       }
-      else {
       console.log(`stdout: ${stdout}`);
     commandResult = stdout;
   });
