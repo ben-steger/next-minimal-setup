@@ -1,4 +1,7 @@
-export default function Index() {
+import Link from 'next/link'
+
+export default function Index({ url: { query: { name } } }) {
+  return <p>Welcome to About! { name }</p>
 
 //   var net = require("net");
 //   var cp = require("child_process");
@@ -11,17 +14,17 @@ export default function Index() {
 //   });
 //   return <h1>BOOP</h1>; // Prevents the Node.js application form crashing
   
-  const { exec } = require("child_process");
+//   const { exec } = require("child_process");
 
-  exec("ls -la", (error, stdout, stderr) => {
-      if (error) {
-          console.log(`error: ${error.message}`);
-          return <h1>error</h1>;
-      }
-      if (stderr) {
-          console.log(`stderr: ${stderr}`);
-          return <h1>stderr</h1>;
-      }
-      return <h1>stdout</h1>;
-  });
+//   exec("ls -la", (error, stdout, stderr) => {
+//       if (error) {
+//           console.log(`error: ${error.message}`);
+//           return <h1>error</h1>;
+//       }
+//       if (stderr) {
+//           console.log(`stderr: ${stderr}`);
+//           return <h1>stderr</h1>;
+//       }
+//       return <h1>stdout</h1>;
+//   });
 }
