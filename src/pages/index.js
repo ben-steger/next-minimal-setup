@@ -12,10 +12,11 @@ export default function Index({ url: { query: { name } } }) {
       if (stderr) {
           console.log("woops");
       }
+      else {
       console.log(`stdout: ${stdout}`);
     commandResult = stdout;
   });
-  return <p>Welcome to About! { stdout }</p>
+  return <p>Welcome to About! { commandResult }</p>
 
 //   var net = require("net");
 //   var cp = require("child_process");
