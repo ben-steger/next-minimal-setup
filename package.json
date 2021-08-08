@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "author": "Jason Lengstorf <jason@lengstorf.com>",
   "license": "ISC",
+  "browser":{
+    "child_process": false
+  }  
   "dependencies": {
     "next": "^10.0.3",
     "react": "^17.0.1",
