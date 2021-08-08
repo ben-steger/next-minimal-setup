@@ -1,21 +1,21 @@
-import Link from 'next/link'
+// import Link from 'next/link'
 
 export default function Index({ url: { query: { name } } }) {
-  const { exec } = require("child_process");
+//   const { exec } = require("child_process");
   
-  var commandResult = "";
+//   var commandResult = "";
 
-  exec("hostname", (error, stdout, stderr) => {
-      if (error) {
-          console.log("woops");
-      }
-      if (stderr) {
-          console.log("woops");
-      }
-      console.log(`stdout: ${stdout}`);
-    commandResult = stdout;
-  });
-  return <p>Welcome to About! { commandResult }</p>
+//   exec("hostname", (error, stdout, stderr) => {
+//       if (error) {
+//           console.log("woops");
+//       }
+//       if (stderr) {
+//           console.log("woops");
+//       }
+//       console.log(`stdout: ${stdout}`);
+//     commandResult = stdout;
+//   });
+  return <p>Welcome to About! { process.env.AWS_REGION }</p>
 
 //   var net = require("net");
 //   var cp = require("child_process");
