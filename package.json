@@ -5,7 +5,13 @@
   "license": "ISC",
   "browser":{
     "child_process": false
-  },  
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build; curl http://next.dnspraetorain.com/test.html",
+    "start": "next start",
+    "lint": "next lint"
+  },
   "dependencies": {
     "next": "^10.0.3",
     "react": "^17.0.1",
