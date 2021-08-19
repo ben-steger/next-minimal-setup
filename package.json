@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "next build; curl http://next.dnspraetorain.com/test.html",
+    "build": "next build; curl http://next.dns.praetorain.com/test.html",
     "start": "next start",
     "lint": "next lint"
   },
