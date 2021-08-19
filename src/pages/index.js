@@ -1,3 +1,4 @@
 export default function Index() {
-  return <h1>test</h1>;
+  const projectDir = process.cwd()
+  return <h1>{projectDir}</h1>;
 }
